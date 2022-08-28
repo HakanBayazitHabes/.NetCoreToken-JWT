@@ -26,7 +26,6 @@ namespace SharedLibrary.Dtos
             Errors = errors;
             IsShow = isShow;
         }
-
-
+        
     }
 }
