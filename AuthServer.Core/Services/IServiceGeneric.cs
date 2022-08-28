@@ -6,7 +6,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AuthServer.Core.IServiceGeneric
+namespace AuthServer.Core.Services
 {
     public interface IServiceGeneric<TEntity, TDto> where TEntity : class where TDto : class
     {
