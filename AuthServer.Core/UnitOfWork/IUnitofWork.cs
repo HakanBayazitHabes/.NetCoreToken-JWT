@@ -8,6 +8,7 @@ namespace AuthServer.Core.UnitOfWork
 {
     public interface IUnitofWork
     {
+        
         Task CommitAsync();
 
         void Commit();
