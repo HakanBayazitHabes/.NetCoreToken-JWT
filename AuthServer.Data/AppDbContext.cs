@@ -21,6 +21,8 @@ namespace AuthServer.Data
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
+            //IEntityTypeConfiguration implemente edilmiş classları bulur. Bulunan classlar buraya toplanır
+            builder.ApplyConfigurationsFromAssembly(GetType().Assembly);
             base.OnModelCreating(builder);
         }
     }
