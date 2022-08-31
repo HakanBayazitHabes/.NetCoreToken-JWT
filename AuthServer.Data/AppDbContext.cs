@@ -12,6 +12,9 @@ namespace AuthServer.Data
 {
     public class AppDbContext:IdentityDbContext<UserApp,IdentityRole,string>
     {
+        /// <summary>
+        /// DbContextOptions classı DbContext'dan kalıtım alır
+        /// </summary>
         public AppDbContext(DbContextOptions<AppDbContext> options):base(options)
         {
         }
