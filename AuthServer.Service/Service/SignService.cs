@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AuthServer.Service.Service    
 {
-    internal static class SignService
+    public static class SignService
     {
         public static SecurityKey GetSymetricSecuritySecurityKey(string securitKey)
         {
