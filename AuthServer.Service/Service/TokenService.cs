@@ -36,7 +36,7 @@ namespace AuthServer.Service.Service
             return Convert.ToBase64String(numberByte);
         }
 
-        private IEnumerable<Claim> GetClaims(UserApp userApp, List<String> audiences)
+        private IEnumerable<Claim> GetClaims(UserApp userApp, List<String> audiences) 
         {
             var userList = new List<Claim>
             {
