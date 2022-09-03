@@ -38,7 +38,8 @@ namespace UIAuthServer.API.Controllers
         {
             return ActionResultInstance(await _productService.UpdateAsync(productDto, productDto.Id));
         }
-
+        //api/product/2
+        [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteProduct(int id)
         {
             return ActionResultInstance(await _productService.RemoveAsync(id));
